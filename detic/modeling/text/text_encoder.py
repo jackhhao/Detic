@@ -175,7 +175,7 @@ def build_text_encoder(pretrain=True):
     text_encoder = CLIPTEXT()
     if pretrain:
         import clip
-        pretrained_model, _ = clip.load("ViT-B/32", device='cpu')
+        pretrained_model, _ = clip.load("ViT-B/32", device='cuda')
         state_dict = pretrained_model.state_dict()
         to_delete_keys = ["logit_scale", "input_resolution", \
         "context_length", "vocab_size"] + \
