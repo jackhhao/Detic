@@ -4,7 +4,7 @@ timm
 dataclasses
 ftfy
 regex
-fasttext
+fasttext-wheel
 scikit-learn
 lvis
 nltk
