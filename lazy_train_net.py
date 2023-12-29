@@ -26,8 +26,8 @@ from detectron2.engine import (
 from detectron2.engine.defaults import create_ddp_model
 from detectron2.evaluation import inference_on_dataset, print_csv_format
 from detectron2.utils import comm
-sys.path.insert(0, 'third_party/CenterNet2/')
-sys.path.insert(0, 'third_party/Deformable-DETR')
+# sys.path.insert(0, 'third_party/CenterNet2/')
+# sys.path.insert(0, 'third_party/Deformable-DETR')
 logger = logging.getLogger("detectron2")
 
 def do_test(cfg, model):
